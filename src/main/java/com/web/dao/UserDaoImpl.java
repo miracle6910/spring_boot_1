@@ -3,10 +3,10 @@ package com.web.dao;
 import com.web.model.User;
 import jakarta.persistence.*;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-@Repository
+@Service
 public class UserDaoImpl implements UserDao {
     @PersistenceContext
     private EntityManager entityManager;
